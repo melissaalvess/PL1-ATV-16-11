@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Exercicio 5</title>
+</head>
+<script language="javascript">
+    function enviarString() {
+        var nome, tamanho, posicao, nomeInvertido, tamanhoInvertido;
+        nome = document.frmSolicitaString.txtS1.value;
+        tamanho = (nome.length);
+        posicao = (nome.lastIndexOf(" "));
+        nomeInvertido = (nome.substring(posicao, tamanho));
+        tamanhoInvertido = nomeInvertido.length;
+        restanteNome = nome.substr(0, tamanho - tamanhoInvertido);
+        document.write(nomeInvertido + ", " + restanteNome);
+    }
+</script>
+
+<body>
+    <center>
+        <font face="Arial">
+            <form name=frmSolicitaString>
+                Informe o nome completo:<input type="text" name=txtS1><br>
+                <input type="button" value="Enviar" onclick="enviarString();" style="height:40px; width:80px">
+                <br><br>
+            </form>
+        </font>
+    </center>
+</body>
+
+</html>

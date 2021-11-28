@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Exercicio 4</title>
+    <script language="javascript">
+        function enviarString() {
+            var s1, i, string, stringInv;
+            s1 = document.frmSolicitaString.txtS1.value;
+            string = s1.replace(" ", "");
+            stringInv = "";
+            for (i = string.length - 1; i >= 0; i--) {
+                stringInv += string.charAt(i);
+            }
+            if (string == stringInv) {
+                document.write("A palavra " + s1 + " é um palíndromo")
+            }
+            else {
+                document.write("A palavra " + s1 + " não é um palíndromo!")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <font face="Arial">
+            <form name=frmSolicitaString>
+                Digite a palavra:<input type="text" name=txtS1><br>
+                <input type="button" value="Enviar" onclick="enviarString();" style="height:40px; width:80px">
+    <br><br>
+    </form>
+</font>
+</center>
+</body>
+</html>

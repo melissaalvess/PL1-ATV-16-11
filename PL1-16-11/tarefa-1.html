@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Exercicio 1</title>
+    <script language="javascript">
+        function enviarString() {
+            var i, s1;
+            s1 = document.frmSolicitaString.txtS1.value;
+            document.write("<table border=3>");
+            for (i = 0; i <= s1.length - 1; i++) {
+                document.write("<td>" + s1.charAt(i));
+                document.write("</td>");
+
+            }
+            document.write("</table>");
+
+            document.write("<table border=3>");
+            for (i = 0; i <= s1.length - 1; i++) {
+                document.write("<tr><td>" + s1.charAt(i));
+                document.write("</tr></td>")
+            }
+            document.write("</table>")
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <font face="Arial">
+            <form name=frmSolicitaString>
+                Digite a palavra:<input type="text" name=txtS1><br><br>
+                <input type="button" value="Enviar" onclick="enviarString();" style="height:40px; width:80px"> 
+        <br><br>
+    </form>
+        </font>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio 2</title>
+    <script language="javascript">
+        function enviarString() {
+            var i, string1, quant;
+            string1 = document.frmSolicitaStringQuant.txtStrng1.value;
+            quant = parseInt(document.frmSolicitaStringQuant.txtQuant.value);
+            document.write("<table border=3>");
+            for (i = 0; i < quant; i++) {
+                document.write("<td width=100 align=center>");
+                document.write(string1);
+                document.write("</td>");
+            }
+            document.write("</table>");
+        }
+    </script>
+</head>
+
+<body>
+    <font face="Arial">
+        <center>
+            <form name=frmSolicitaStringQuant>
+                Digite a caractere: <input type="text" name=txtStrng1><br>
+                Informe a quantidade de vezes que você deseja que repita:<input type="text" name=txtQuant><br>
+                <input type="button" color="yellow" value="Enviar" onclick="enviarString();" style="height:40px; width:80px">
+                <br><br>
+            </form>
+        </center>
+    </font>
+
+    <body>
+
+</html>
